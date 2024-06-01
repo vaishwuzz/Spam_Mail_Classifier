@@ -1,26 +1,13 @@
 # Email-Spam-Classifier-Using-Naive-Bayes
 
-Naive Bayes is a supervised classification technique based on Bayes' Theorem with an assumption of independence among predictors. That is, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature.
+Naive Bayes is a supervised classification method based on Bayes' Theorem, assuming independence among predictors. In other words, a Naive Bayes classifier assumes that the occurrence of a specific feature in a class is independent of the presence of any other feature.
 
-It is a popular technique for text categorization, judging documents as belonging to one category or the other (such as spam or legitimate, sports or politics, etc.) with word frequencies as features.
+This technique is widely used for text categorization, determining whether documents belong to categories like spam or legitimate, sports or politics, etc., using word frequencies as features.
 
-**Goal:** Previously unseen records should be assigned a class as accurately as possible
+Goal: Accurately assign classes to previously unseen records.
 
-* We have a bunch of emails classified as ['spam'](https://github.com/Surya-Murali/Email-Spam-Classifier-Using-Naive-Bayes/tree/master/emails/spam)
-and a bunch of emails classified as ['ham'](https://github.com/Surya-Murali/Email-Spam-Classifier-Using-Naive-Bayes/tree/master/emails/ham)
-(not spam)
-* The emails are first read and stored in a dataframe. They are then parsed using CountVectorizer
-* This information is used to train the model and its prediction is then tested with a sample input
+We have a collection of emails categorized as either 'spam' or 'ham' (not spam). The emails are initially read and stored in a dataframe. They are then processed using CountVectorizer. This data trains the model, and its predictions are tested with sample inputs.
 
-**Python Libraries used:** pandas, numpy, io, os, CountVectorizer and MultinomialNB from sklearn
+Python Libraries Used: pandas, numpy, io, os, CountVectorizer, and MultinomialNB from sklearn.
 
-The [Spam classifier](https://github.com/Surya-Murali/Email-Spam-Classifier-Using-Naive-Bayes/blob/master/SpamClassifier.py) classifies the given input as a spam/ham. A sample output is found [here.](https://github.com/Surya-Murali/Email-Spam-Classifier-Using-Naive-Bayes/blob/master/SpamClassifierOutput.txt)
-
-### Some Practical Applications:
-* Direct Marketing
-* Fraud Detection
-* Text Classification
-* Spam Filtering
-* Categorizing News
-* Medical Diagnosis
-* Face Recognition
+The spam classifier evaluates the given input and determines whether it is spam or ham. 
